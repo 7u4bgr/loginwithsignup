@@ -1,0 +1,14 @@
+
+services:
+  db:
+    image: mysql:latest
+    container_name: sqldb
+    environment:
+      - MYSQL_ROOT_PASSWORD=Baku2018
+      - MYSQL_DATABASE=dockernewdb
+      - MYSQL_USER=sqldb
+      - MYSQL_PASSWORD=Baku2018
+    ports:
+      - "3311:3306"
+
+

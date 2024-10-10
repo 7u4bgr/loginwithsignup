@@ -1,0 +1,51 @@
+
+### Get All Users
+GET http://localhost:8080/all
+Accept: application/json
+
+
+### Add New User
+POST http://localhost:8080/save
+Content-Type: application/json
+
+{
+  "name": "Enver",
+  "surname": "Axundov",
+  "age": 26
+}
+
+
+### Delete All Users
+DELETE http://localhost:8080/deleteallusers
+Content-Type: application/json
+
+{
+  "id": 6,
+  "surname": "Mehemmed",
+  "age": 11
+}
+
+### Update User
+PUT http://localhost:8080/2
+Content-Type: application/json
+
+{
+  "name": "Elchin",
+  "surname": "Abdullayev",
+  "age": 25
+}
+
+### Get User by ID
+GET http://localhost:8080/1
+Accept: application/json
+
+### Delete User by ID
+DELETE http://localhost:8080/3
+
+### Find User by Surname
+GET http://localhost:8080/findSurname?findSurname=Doe
+Accept: application/json
+
+### Filter All
+GET http://localhost:8080/filterAll?name=John&surname=Doe&age=25
+Accept: application/json
